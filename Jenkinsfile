@@ -16,7 +16,8 @@ pipeline {
         
         stage('When') {
             steps {
-                sh "echo 'Plik Jenkinsfile z branch: master'"
+                sh "echo 'Plik Jenkinsfile z branch: seleniumgrid'"
+                sh "echo 'Dodatkowy wpis'"
             }
             when {
                 branch 'seleniumgrid'
