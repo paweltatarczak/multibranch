@@ -10,13 +10,13 @@ pipeline {
     stages {
         stage('Git') {
             steps {
-                git branch: 'seleniumgrid', credentialsId: 'GitHubToken', url: 'https://github.com/paweltatarczak/multibranch'
+                git branch: 'master', credentialsId: 'GitHubToken', url: 'https://github.com/paweltatarczak/multibranch'
             }
         }
         
         stage('When') {
             steps {
-                sh "echo 'Sprawdzam czy branch to seleniumgrid...'"
+                sh "echo 'Plik Jenkinsfile z branch: master'"
             }
             when {
                 branch 'seleniumgrid'
