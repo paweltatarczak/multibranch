@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh "echo 'Plik Jenkinsfile z branch: seleniumgrid'"
                 sh "echo 'Dodatkowy wpis'"
+		sh "echo 'Jeszcze jeden wpis dla triggera'"
             }
             when {
                 branch 'seleniumgrid'
